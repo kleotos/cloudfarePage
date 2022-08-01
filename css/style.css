@@ -258,15 +258,27 @@ hr .new1 {
     header.sticky {
         padding: 10px 20px;
     }
+    section {
+        margin-top: 5rem !important;
+        padding: 2rem 0rem !important;
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+    }
+    section .section1 h1 {
+        font-style: 'sans-serif';
+        font-size: 1.7rem !important;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgb(34, 34, 34);
+    }
     section .section1 {
         width: 100% !important;
     }
-    section {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center!;
+    section .section1>div.my-button {
+        padding: 2rem 2rem !important;
     }
-    section .section1 .my-button {
+    .section1 .my-button {
         background-color: rgb(0, 81, 195);
         border: none;
         color: white;
@@ -280,16 +292,152 @@ hr .new1 {
         cursor: pointer;
         margin-top: 2rem;
         margin-bottom: 2rem !important;
-        width: 100%;
+        width: 100% !important;
+    }
+    article {
+        background: rgb(0, 54, 130);
+        display: flex;
+        flex-direction: column !important;
+        padding: 2rem 1rem !important;
+        margin-top: 0rem !important;
+    }
+    article p {
+        font-size: 1.8rem!important;
+        color: #fff;
+        letter-spacing: 0.01rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+    article .group>div {
+        margin: 0rem !important;
+        border: 1px solid red;
+    }
+    article .group>div button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        padding-right: 1rem;
+        width: 100% !important;
+    }
+    article .group>div button {
+        background-color: rgb(246, 130, 31);
+        color: black;
+    }
+    article .group>div button:hover {
+        background-color: rgb(17, 25, 37);
+        color: white;
+    }
+    main {
+        padding: 1rem !important;
+        background-color: rgb(248, 251, 251);
+    }
+    main .submain h1 {
+        padding-bottom: 1rem !important;
+    }
+    main h5 {
+        text-transform: uppercase;
+        color: red;
+        font-size: 1rem;
+        padding-top: 2rem;
+    }
+    main h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    main p {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .submain {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-between!important;
+    }
+    .submaini {
+        width: 100% !important;
+        margin-bottom: 2rem;
+    }
+    .submainii {
+        width: 100% !important;
+        margin-bottom: 2rem;
+    }
+    .submainiii {
+        width: 100% !important;
+    }
+    hr {
+        display: block;
+        margin-top: 0.5em !important;
+        margin-bottom: 1.5em;
+        border-style: inset;
+        border-width: 1px;
+    }
+    main .submain p {
+        padding-bottom: 1.5rem;
+    }
+    aside {
+        background-color: #ffff;
+        display: flex;
+        flex-direction: column !important;
+        padding: 3rem 1rem !important;
+        justify-content: space-between !important;
+    }
+    aside p {
+        font-size: 2rem;
+    }
+    aside .ii p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    aside .i,
+    .ii {
+        width: 100% !important;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column !important;
+        padding: 0rem 1rem !important;
+    }
+    .spot {
+        height: 100vh;
+        width: 100% !important;
+        height: 100px !important;
+        margin-bottom: 2rem !important;
+    }
+    .aside .spot {
+        margin-bottom: 1rem;
+    }
+    .aside .spot .fa-solid {
+        font-size: 1.5rem !important;
+        color: rgb(0, 85, 220);
+        padding-top: 0rem !important;
+    }
+    .aside h5 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        padding-top: 0.5rem !important;
+    }
+    .aside p {
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding-top: 0rem !important;
     }
 }
 
 
 /* end of media */
 
+
+/* section */
+
 section {
     margin-top: 10rem;
-    padding: 0rem 2rem;
+    padding: 2rem 6.8rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -368,7 +516,7 @@ a:active {
     color: rgb(17, 25, 37);
 }
 
-section .section1 .my-button {
+.my-button {
     background-color: rgb(0, 81, 195);
     border: none;
     color: white;
@@ -384,9 +532,13 @@ section .section1 .my-button {
     ;
 }
 
-section .section1 .my-button {
+.my-button {
     background-color: rgb(0, 81, 195);
     color: black;
+}
+
+.fas {
+    padding-left: 1rem;
 }
 
 section .section1 .my-button:hover {
@@ -394,33 +546,38 @@ section .section1 .my-button:hover {
     color: white;
 }
 
+
+/*section-end*/
+
+
+/*article*/
+
 article {
     background: rgb(0, 54, 130);
     display: flex;
     flex-direction: row;
-    padding: 2rem 5rem;
-    margin-top: 3rem;
+    padding: 4rem 6.8rem;
+    margin-top: 2rem;
 }
 
-article .article-paragraph {
-    width: 50%;
-}
-
-article.article-1 p {
+article p {
     font-size: 2.3rem;
     color: #fff;
     letter-spacing: 0.01rem;
     font-weight: 400;
 }
 
-article .butt {
+article .group {
     display: flex;
     flex-direction: row;
-    padding: 2rem 5rem;
     justify-content: space-between;
 }
 
-article .butt .my-button {
+article .group>div {
+    margin: 1rem;
+}
+
+article .group>div button {
     border: none;
     color: white;
     padding: 16px 32px;
@@ -431,14 +588,320 @@ article .butt .my-button {
     transition-duration: 0.4s;
     cursor: pointer;
     padding-right: 1rem;
+    width: 10rem;
 }
 
-article .butt .my-button {
+article .group>div button {
     background-color: rgb(246, 130, 31);
     color: black;
 }
 
-article .butt .my-button:hover {
+article .group>div button:hover {
     background-color: rgb(17, 25, 37);
     color: white;
+}
+
+
+/*article-end*/
+
+
+/* main */
+
+main {
+    padding: 6rem 6.8rem;
+    background-color: rgb(248, 251, 251);
+}
+
+main .submain h1 {
+    padding-bottom: 1rem;
+}
+
+main h5 {
+    text-transform: uppercase;
+    color: red;
+    font-size: 1rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+main p {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.submain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.submaini {
+    width: 30%;
+}
+
+.submainii {
+    width: 30%;
+}
+
+.submainiii {
+    width: 30%;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+/* main */
+
+main .submain p {
+    padding-bottom: 1.5rem;
+}
+
+main .submain a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main .submain a .fas {
+    text-decoration: none;
+    padding-left: 0.5rem;
+}
+
+
+/* aside */
+
+aside {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    padding: 6rem 6.8rem;
+    justify-content: space-between;
+}
+
+aside p {
+    font-size: 2rem;
+}
+
+aside .ii p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+aside .i,
+.ii {
+    width: 40%;
+}
+
+.aside {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 6.8rem;
+    justify-content: space-between;
+}
+
+.spot {
+    width: 20%;
+    height: 100px;
+}
+
+
+/* class_aside */
+
+.aside .spot .fa-solid {
+    font-size: 2.5rem;
+    color: rgb(0, 85, 220);
+}
+
+.aside h5 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+}
+
+.aside p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+}
+
+.another-hr {
+    margin: 5rem 6.8rem;
+}
+
+.another-hr>div a {
+    text-decoration: none;
+    /* padding: 2rem 0rem; */
+    margin-top: 2rem;
+}
+
+.another-hr hr {
+    margin-top: 2rem;
+}
+
+
+/* product */
+
+.product {
+    margin: 2rem 6.8rem;
+}
+
+.product .i h5 {
+    color: red;
+    padding-bottom: 1rem;
+}
+
+.product .ii {
+    color: black;
+    font-size: 2.5rem;
+    letter-spacing: 0.2px;
+    font-weight: 200;
+}
+
+
+/* services */
+
+.services {
+    margin: 3rem 6.8rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+
+.services>div {
+    padding-right: 3rem;
+}
+
+.services .bottom p {
+    border-bottom: 2px solid rgb(28, 28, 37);
+    color: rgb(28, 28, 37);
+    border-spacing: 3px;
+    padding-bottom: 4px;
+}
+
+.services p {
+    font-size: 1.2rem;
+}
+
+.services>div a {
+    text-decoration: none;
+    color: rgb(39, 99, 184);
+}
+
+
+/* application */
+
+.application {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 6.8rem;
+    justify-content: space-between;
+}
+
+.application .spot1 {
+    width: 25%;
+    margin-right: 4rem;
+}
+
+.application .spot1 h3 {
+    font-size: 1.8rem;
+    color: rgb(28, 28, 37);
+    padding-bottom: 4rem;
+    letter-spacing: 0.4px;
+}
+
+.application .spot1 p {
+    font-size: 1rem;
+    color: rgb(28, 28, 37);
+    padding-bottom: 2rem;
+    letter-spacing: 0.4px;
+}
+
+.application .spot1 a {
+    text-decoration: none;
+}
+
+.application .port i {
+    font-size: 2rem;
+    color: rgb(0, 85, 220);
+    padding-bottom: 1rem;
+}
+
+.application>div .port {
+    margin-bottom: 5rem;
+}
+
+.sase {
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 6.8rem;
+    margin-top: 10rem;
+}
+
+.sase h2 {
+    font-size: 1.5rem;
+    color: rgb(28, 28, 37);
+    padding-bottom: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.sase h6 {
+    font-size: 1rem;
+    color: rgb(28, 28, 37);
+    padding-bottom: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.sase p {
+    font-size: 1rem;
+    color: rgb(28, 28, 37);
+    padding-bottom: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.sase .div1>div button {
+    width: 100%;
+    background-color: rgb(0, 85, 220);
+    color: #fff;
+    /* font-size: 1rem; */
+}
+
+.sase .div1>div button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+.sase .div1>div button {
+    background-color: rgb(0, 85, 220);
+    color: black;
+}
+
+.sase .div1>div button:hover {
+    background-color: rgb(17, 25, 37);
+    color: white;
+}
+
+.sase .div1 {
+    width: 40%;
+    margin-right: 7rem;
+}
+
+.sase .div2 {
+    width: 30%;
 }
